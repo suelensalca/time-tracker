@@ -1,5 +1,5 @@
-function App() {
-  return <div>Walter White</div>;
-}
+import styles from "./global.scss";
 
-export default App;
+export function App() {
+  return <main>Walter White</main>;
+}
