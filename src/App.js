@@ -1,5 +1,5 @@
-function App() {
-  return <div>Walter White</div>;
-}
+import styles from "./App.module.scss";
 
-export default App;
+export function App() {
+  return <main className={styles.container}>Walter White</main>;
+}
