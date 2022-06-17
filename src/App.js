@@ -1,5 +1,5 @@
-import styles from "./global.scss";
+import styles from "./App.module.scss";
 
 export function App() {
-  return <main>Walter White</main>;
+  return <main className={styles.container}>Walter White</main>;
 }
