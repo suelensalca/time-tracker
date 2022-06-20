@@ -2,8 +2,6 @@
     max-width: 1440px;
     margin: 0 auto;
     box-sizing: border-box;
-    height: 100%;
-    align-items: center;
 }
 
 :root {
@@ -24,6 +22,7 @@
 body {
   background: var(--background);
   color: var(--white);
+  font-family: 'Rubik';
 }
 
 button {
