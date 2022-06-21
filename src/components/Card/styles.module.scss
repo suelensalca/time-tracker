@@ -1,6 +1,6 @@
 .container {
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
     border-radius: 1rem;
     background-color: var(--card-blue);
     position: relative;   
@@ -16,12 +16,11 @@
 
 .info {
     background-color: var(--card-blue);
+    width: 18rem;
     padding: 2rem;
-    width: 20rem;
     position: absolute;
     top: 4rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-radius: 1rem;
 }
 
 .activity {
