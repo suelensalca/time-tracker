@@ -1,0 +1,41 @@
+.container {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    background-color: var(--card-blue);
+    position: relative;   
+}
+
+.header {
+    background-color: var(--work-orange);
+    text-align: right;
+    padding: 0 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.info {
+    background-color: var(--card-blue);
+    padding: 2rem;
+    width: 20rem;
+    position: absolute;
+    top: 4rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.activity {
+    font-size: 1.5rem;
+}
+
+.hours {
+    padding-top: 2rem;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.pastHours {
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
