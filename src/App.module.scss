@@ -1,16 +1,12 @@
 
 .container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 50%;
-    width: 80%;
     position: absolute;
-    top: 25%;
-    right: 10%;
+    top: 10%;
   }
   
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
 }

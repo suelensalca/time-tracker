@@ -6,12 +6,36 @@
     position: relative;   
 }
 
+
 .header {
-    background-color: var(--work-orange);
     text-align: right;
     padding: 0 1rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+}
+
+.work {
+    background-color: var(--work-orange);
+}
+
+.play {
+    background-color: var(--play-blue);
+}
+
+.study {
+    background-color: var(--study-red);
+}
+
+.exercise {
+    background-color: var(--exercise-green);
+}
+
+.social {
+    background-color: var(--social-violet);
+}
+
+.selfCare {
+    background-color: var(--self-care-yellow);
 }
 
 .info {
