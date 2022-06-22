@@ -6,12 +6,39 @@
     position: relative;   
 }
 
+
 .header {
-    background-color: var(--work-orange);
+    background-color: var(--pale-blue);
     text-align: right;
     padding: 0 1rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+}
+
+.work {
+    background-color: var(--work-orange);
+}
+
+.play {
+    background-color: var(--play-blue);
+}
+
+.study {
+    background-color: var(--study-red);
+}
+
+.exercise {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--exercise-green);
+}
+
+.social {
+    background-color: var(--social-violet);
+}
+
+.selfCare {
+    background-color: var(--self-care-yellow);
 }
 
 .info {
@@ -37,4 +64,37 @@
     padding-top: 1rem;
     font-size: 1rem;
     font-weight: 300;
+}
+
+@media (max-width: 930px) {
+    .container {
+        width: 100%;
+    }
+    
+    .header {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    .activity {
+        width: 100%;
+    }
+
+    .hours {
+        width: 30%;
+        font-size: 3rem;
+    }
+    
+    .pastHours {
+        width: 70%;
+        padding: 0 1rem;
+        text-align: right;
+    }
 }
