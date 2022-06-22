@@ -27,6 +27,8 @@
 }
 
 .exercise {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     background-color: var(--exercise-green);
 }
 
@@ -61,4 +63,18 @@
     padding-top: 1rem;
     font-size: 1rem;
     font-weight: 300;
+}
+
+@media (max-width: 880px) {
+    .container {
+        width: 100%;
+    }
+    
+    .header {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+    }
 }

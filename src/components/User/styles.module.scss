@@ -1,5 +1,5 @@
 .container {
-    width: 20rem;
+    min-width: 18rem;
     min-height: 40rem;
     border-radius: 1rem;
     background-color: var(--card-blue);
@@ -38,3 +38,66 @@
         display: block;
     }
 }
+
+@media (max-width: 1280px) {
+    .header {
+      min-height: 32rem;
+
+      img {
+        margin-top: 3rem;
+      }
+      p {
+        padding: 5rem 0;
+      }
+    }
+
+    .timePeriod {
+        padding-top: 4rem;
+
+        button {
+            padding-top: 2rem;
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .container {
+        width: 100%;
+        min-height: 18rem;
+    }
+    
+    .header {
+        min-height: auto;
+        display: flex;
+        align-items: flex-end;
+    
+        img {
+            margin-top: 0;
+        }
+    
+        p {
+            padding: 1rem;
+            font-size: 2.5rem;
+        }
+    }
+    
+    .timePeriod {
+        padding: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+    
+        button {
+            padding-top: 1rem;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .header {
+      display: block;
+
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
