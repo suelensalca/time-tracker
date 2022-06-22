@@ -4,12 +4,12 @@ export function Card({icon, activity, hours }) {
     return (
         <div className={styles.container}>
             <div className={
-                activity === "Work" ? [styles.header, styles.work].join(" ") : 
-                activity === "Play" ? [styles.header, styles.play].join(" ") : 
-                activity === "Study" ? [styles.header, styles.study].join(" ") : 
-                activity === "Exercise" ? [styles.header, styles.exercise].join(" ") : 
+                activity === "Trabalho" ? [styles.header, styles.work].join(" ") : 
+                activity === "Diversão" ? [styles.header, styles.play].join(" ") : 
+                activity === "Estudo" ? [styles.header, styles.study].join(" ") : 
+                activity === "Exercício" ? [styles.header, styles.exercise].join(" ") : 
                 activity === "Social" ? [styles.header, styles.social].join(" ") : 
-                activity === "Self Care" ? [styles.header, styles.selfCare].join(" ") : 
+                activity === "Autocuidado" ? [styles.header, styles.selfCare].join(" ") : 
                 styles.header}>
                 <img src={icon} alt={activity}/>
             </div>
