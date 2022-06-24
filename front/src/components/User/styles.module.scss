@@ -10,15 +10,25 @@
     background-color: var(--profile-blue);
     padding: 2rem;
     border-radius: 1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    div {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
 
     img {
-        max-width: 8rem;
+        max-width: 9rem;
         border: 0.25rem solid var(--white);
         border-radius: 50%;
     }
 
     p {
-        padding: 3rem 0;
+        padding: 2rem 0;
+        text-align: center;
         font-size: 3rem;
         font-weight: 300;
     }
@@ -27,7 +37,6 @@
 .timePeriod {
     padding: 2rem;
     
-
     button {
         margin: 0;
         padding: 0.75rem 0;
@@ -40,6 +49,38 @@
     }
 }
 
+.signInButton {
+    height: 3rem;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    border-radius: 3rem;
+    background: var(--button-blue);
+    border: 0;
+    padding: 0 1.5rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    color: var(--white);
+    font-weight: bold;
+  
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  
+    svg:first-child {
+      margin-right: 1rem;
+    }
+  
+    transition: filter 0.2s;
+  
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+
 @media (max-width: 1280px) {
     .header {
       min-height: 32rem;
@@ -48,7 +89,7 @@
         margin-top: 3rem;
       }
       p {
-        padding: 5rem 0;
+        padding: 3rem 0;
       }
     }
 
