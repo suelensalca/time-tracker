@@ -21,7 +21,7 @@ router.get("/login/success", (req, res) => {
   });
   
   router.get("/logout", (req, res) => {
-    req.logout();
+    req.logout({keepSessionInfo: false});
     res.redirect(CLIENT_URL);
   });
 

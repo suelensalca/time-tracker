@@ -1,4 +1,5 @@
 import styles from './styles.module.scss'
+import { FaGithub } from 'react-icons/fa';
 import { useEffect, useState } from "react";
 
 export function User() {
@@ -27,8 +28,6 @@ export function User() {
         getUser();
     }, []);
 
-    console.log(user);
-
     const github = () => {
         window.open("http://localhost:5000/auth/github", "_self")
     };
@@ -41,15 +40,25 @@ export function User() {
         <div className={styles.container}>
                 {user ? (
                     <div className={styles.header}>
-                        <img src={user.photos[0].value} alt={user.displayName} />
-                        <p>{user.displayName}</p>
-                        <button onClick={logout}>Logout</button>
+                        <button className={styles.signInButton} onClick={logout}>
+                            <FaGithub />
+                            Logout
+                        </button>
+                        <div>
+                            <img src={user.photos[0].value} alt={user.displayName} />
+                            <p>{user.displayName}</p>
+                        </div>
                     </div>
                 ) : (
-                    <div className={styles.header} onClick={github}>
-                        <img src='../../../images/image-jeremy.png' alt="user"/>
-                        <p>Usuário</p>
-                        <button onClick={github}>Login</button>
+                    <div className={styles.header}>
+                        <button className={styles.signInButton} onClick={github}>
+                            <FaGithub />
+                            Login
+                        </button>
+                        <div>
+                            <img src={'../../../images/duck.png'} alt="user"/>
+                            <p>Usuário</p>
+                        </div>
                     </div>
                 )}
             <div className={styles.timePeriod}>
